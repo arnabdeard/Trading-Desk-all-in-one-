@@ -6,6 +6,7 @@
 <title>The Trading Desk</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@144,800,100,1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap">
 <style>
 :root{--bg:#f3f1ea;--panel:#fff;--line:#d9d5c8;--text:#16181c;--muted:#6b6f78;--gold:#a8832f;--green:#0f8f68;--blue:#2d5fd2;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
@@ -44,6 +45,12 @@ iframe.on{display:block}
 body{height:100dvh}
 @supports not (height:100dvh){body{height:100%}}
 iframe{-webkit-overflow-scrolling:touch}
+body,h1,h2,p,small,b,button,footer,.eyebrow,.sub,.quote,.card,.card .num,.card .go,#bar,#bar .t,#bar button{font-family:Aboreto,'Playfair Display',Georgia,serif!important;font-weight:400!important;font-style:normal!important;font-variation-settings:normal!important}
+h1{font-size:clamp(34px,7.5vw,78px)!important;letter-spacing:.06em!important;line-height:1.1!important}
+.eyebrow,.sub,.card .num,.card .go,footer,.quote small,#bar button{letter-spacing:.28em!important}
+.quote{font-size:clamp(15px,2.2vw,21px)!important;letter-spacing:.08em!important;line-height:1.7!important}
+.card h2{letter-spacing:.06em!important;font-size:clamp(24px,3.6vw,34px)!important}
+.card p{letter-spacing:.05em!important;line-height:1.7!important;font-size:13px!important}
 @media (max-width:600px){
  #home{padding:28px 16px 32px}
  .grid{max-height:none;flex:none;margin-top:28px;gap:14px}
